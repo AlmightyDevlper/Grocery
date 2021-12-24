@@ -14,6 +14,7 @@
 		04F3449F27765B4800E6A460 /* groceryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449D27765B4800E6A460 /* groceryApp.xcdatamodeld */; };
 		04F344A127765B4B00E6A460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F344A027765B4B00E6A460 /* Assets.xcassets */; };
 		04F344A427765B4B00E6A460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F344A227765B4B00E6A460 /* LaunchScreen.storyboard */; };
+		04F344B327766F1500E6A460 /* SignPainter HouseScript Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F344B227766F1500E6A460 /* SignPainter HouseScript Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		04F344A027765B4B00E6A460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F344A327765B4B00E6A460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F344A527765B4B00E6A460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F344B227766F1500E6A460 /* SignPainter HouseScript Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter HouseScript Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,18 @@
 				04F344A027765B4B00E6A460 /* Assets.xcassets */,
 				04F344A227765B4B00E6A460 /* LaunchScreen.storyboard */,
 				04F344A527765B4B00E6A460 /* Info.plist */,
+				04F344AB2776622D00E6A460 /* fonts */,
 				04F3449D27765B4800E6A460 /* groceryApp.xcdatamodeld */,
 			);
 			path = groceryApp;
+			sourceTree = "<group>";
+		};
+		04F344AB2776622D00E6A460 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04F344B227766F1500E6A460 /* SignPainter HouseScript Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +141,7 @@
 			files = (
 				04F344A427765B4B00E6A460 /* LaunchScreen.storyboard in Resources */,
 				04F344A127765B4B00E6A460 /* Assets.xcassets in Resources */,
+				04F344B327766F1500E6A460 /* SignPainter HouseScript Regular.ttf in Resources */,
 				04F3449C27765B4800E6A460 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomas.groceryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thomas.groceryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
