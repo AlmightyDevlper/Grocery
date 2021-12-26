@@ -87,7 +87,7 @@
                                 <rect key="frame" x="168" y="802" width="78" height="30"/>
                                 <state key="normal" title="Plus button"/>
                                 <connections>
-                                    <segue destination="a7i-jd-7gC" kind="showDetail" id="5EL-bx-gPD"/>
+                                    <segue destination="mVI-Fd-oQk" kind="show" id="rl2-Ds-uyF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,6 +115,54 @@
             </objects>
             <point key="canvasLocation" x="1253.6231884057972" y="-220.3125"/>
         </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="H5K-7B-fxb">
+            <objects>
+                <viewController id="mVI-Fd-oQk" customClass="EditViewController" customModule="groceryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y2B-rP-DvF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbgk-3" translatesAutoresizingMaskIntoConstraints="NO" id="UAJ-xy-qKT">
+                                <rect key="frame" x="0.0" y="-56" width="414" height="898"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JZ-ww-elL">
+                                <rect key="frame" x="46" y="175" width="323" height="573"/>
+                                <color key="backgroundColor" red="0.97502392530441284" green="0.45424032211303711" blue="0.30614173412322998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="323" id="5by-lp-Sgy"/>
+                                    <constraint firstAttribute="height" constant="573" id="JHH-RP-lSM"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping-cart" translatesAutoresizingMaskIntoConstraints="NO" id="AGb-jg-eBh">
+                                <rect key="frame" x="87" y="117" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="HId-fw-XA3"/>
+                                    <constraint firstAttribute="width" constant="240" id="bjN-JN-kd7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XdR-3Y-egn" firstAttribute="trailing" secondItem="AGb-jg-eBh" secondAttribute="trailing" constant="87" id="DGg-6P-Bt5"/>
+                            <constraint firstItem="AGb-jg-eBh" firstAttribute="top" secondItem="XdR-3Y-egn" secondAttribute="top" constant="117" id="KqI-DO-Ta4"/>
+                            <constraint firstItem="UAJ-xy-qKT" firstAttribute="top" secondItem="y2B-rP-DvF" secondAttribute="topMargin" constant="-56" id="Suu-Bb-hQp"/>
+                            <constraint firstItem="XdR-3Y-egn" firstAttribute="bottom" secondItem="AGb-jg-eBh" secondAttribute="bottom" constant="563" id="hFx-js-TIV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UAJ-xy-qKT" secondAttribute="bottom" constant="-34" id="hQS-vh-nsO"/>
+                            <constraint firstItem="7JZ-ww-elL" firstAttribute="centerX" secondItem="UAJ-xy-qKT" secondAttribute="centerX" constant="0.5" id="iQx-Rh-hXP"/>
+                            <constraint firstItem="AGb-jg-eBh" firstAttribute="leading" secondItem="XdR-3Y-egn" secondAttribute="leading" constant="87" id="mpz-Kx-rj3"/>
+                            <constraint firstItem="7JZ-ww-elL" firstAttribute="top" secondItem="XdR-3Y-egn" secondAttribute="top" constant="175" id="tLy-am-Dpf"/>
+                            <constraint firstItem="UAJ-xy-qKT" firstAttribute="leading" secondItem="XdR-3Y-egn" secondAttribute="leading" id="w1A-rI-l7F"/>
+                            <constraint firstItem="7JZ-ww-elL" firstAttribute="leading" secondItem="y2B-rP-DvF" secondAttribute="leadingMargin" constant="26" id="w3Y-MK-JYp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XdR-3Y-egn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aav-qX-STn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anC-kf-azi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.6231884057972" y="543.75"/>
+        </scene>
         <!--Dish Detail View Controller-->
         <scene sceneID="0BI-ri-2dQ">
             <objects>
@@ -123,25 +171,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appbgk-3" translatesAutoresizingMaskIntoConstraints="NO" id="aAJ-fR-ntv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbgk-3" translatesAutoresizingMaskIntoConstraints="NO" id="aAJ-fR-ntv">
                                 <rect key="frame" x="0.0" y="-65" width="414" height="916"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-Gd-fWJ">
+                                <rect key="frame" x="46" y="188" width="323" height="573"/>
+                                <color key="backgroundColor" red="0.97502392530000004" green="0.45424032209999998" blue="0.30614173410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="573" id="76j-7L-eDM"/>
+                                    <constraint firstAttribute="width" constant="323" id="taJ-FW-q3j"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping-cart" translatesAutoresizingMaskIntoConstraints="NO" id="rxa-2l-jcG">
+                                <rect key="frame" x="87" y="124" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EoU-nU-U9c"/>
+                                    <constraint firstAttribute="width" constant="240" id="wFi-Gk-7MP"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rxa-2l-jcG" firstAttribute="top" secondItem="JCc-vY-CeK" secondAttribute="top" constant="124" id="1mw-S0-odL"/>
+                            <constraint firstItem="xNd-Gd-fWJ" firstAttribute="centerX" secondItem="Qrq-Jg-8i3" secondAttribute="centerX" id="3Ds-He-axx"/>
+                            <constraint firstItem="aAJ-fR-ntv" firstAttribute="leading" secondItem="JCc-vY-CeK" secondAttribute="leading" id="5Ri-jn-9zX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aAJ-fR-ntv" secondAttribute="bottom" constant="-43" id="6qW-vq-Ja3"/>
+                            <constraint firstItem="aAJ-fR-ntv" firstAttribute="top" secondItem="Qrq-Jg-8i3" secondAttribute="topMargin" constant="-65" id="Isi-W3-Cn1"/>
+                            <constraint firstItem="xNd-Gd-fWJ" firstAttribute="centerY" secondItem="Qrq-Jg-8i3" secondAttribute="centerY" constant="53.5" id="KGm-1D-pMp"/>
+                            <constraint firstItem="rxa-2l-jcG" firstAttribute="centerX" secondItem="xNd-Gd-fWJ" secondAttribute="centerX" id="YZ6-c1-R35"/>
+                            <constraint firstItem="xNd-Gd-fWJ" firstAttribute="centerX" secondItem="aAJ-fR-ntv" secondAttribute="centerX" id="cd7-ba-OVb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JCc-vY-CeK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HM-CK-aBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924.6376811594205" y="-220.3125"/>
+            <point key="canvasLocation" x="2125" y="-220"/>
         </scene>
     </scenes>
     <resources>
         <image name="appbgk-3" width="1125" height="2436"/>
         <image name="shopping-cart" width="651" height="651"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="5EL-bx-gPD"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0421EB362777D41000E61776 /* dishesListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB352777D41000E61776 /* dishesListCellTableViewCell.swift */; };
 		0421EB382777E04900E61776 /* dishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB372777E04900E61776 /* dishDetailViewController.swift */; };
+		0428344E2778A81E0089E7C7 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428344D2778A81E0089E7C7 /* EditViewController.swift */; };
 		04F3449527765B4800E6A460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449427765B4800E6A460 /* AppDelegate.swift */; };
 		04F3449727765B4800E6A460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449627765B4800E6A460 /* SceneDelegate.swift */; };
 		04F3449927765B4800E6A460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449827765B4800E6A460 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		0421EB352777D41000E61776 /* dishesListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dishesListCellTableViewCell.swift; sourceTree = "<group>"; };
 		0421EB372777E04900E61776 /* dishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dishDetailViewController.swift; sourceTree = "<group>"; };
+		0428344D2778A81E0089E7C7 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		04F3449127765B4800E6A460 /* groceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F3449427765B4800E6A460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F3449627765B4800E6A460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				04F3449827765B4800E6A460 /* ViewController.swift */,
 				0421EB352777D41000E61776 /* dishesListCellTableViewCell.swift */,
 				04F3449A27765B4800E6A460 /* Main.storyboard */,
+				0428344D2778A81E0089E7C7 /* EditViewController.swift */,
 				0421EB372777E04900E61776 /* dishDetailViewController.swift */,
 				04F344A027765B4B00E6A460 /* Assets.xcassets */,
 				04F344A227765B4B00E6A460 /* LaunchScreen.storyboard */,
@@ -165,6 +168,7 @@
 				04F3449727765B4800E6A460 /* SceneDelegate.swift in Sources */,
 				04F3449F27765B4800E6A460 /* groceryApp.xcdatamodeld in Sources */,
 				0421EB382777E04900E61776 /* dishDetailViewController.swift in Sources */,
+				0428344E2778A81E0089E7C7 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
