@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     
     var dishes = ["thai Curry", "Spageti", "pizza"]
-
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    //lets make some dummy data
+    
+    
+    var items:[Dish]?
+    
     @IBOutlet var groceryTableView: UITableView!
     
     override func viewDidLoad() {
@@ -19,6 +25,42 @@ class ViewController: UIViewController {
         
         groceryTableView.dataSource = self
         groceryTableView.delegate = self
+        
+        
+        createDummyData()
+    }
+    
+    func fetchDish() {
+        do {
+            self.items = try context.fetch(Dish.fetchRequest())
+            
+            if Thread.isMainThread {
+                groceryTableView.reloadData()
+            } else {
+                DispatchQueue.main.sync {
+                    groceryTableView.reloadData()
+                }
+            }
+        } catch {
+            // throw mess
+        }
+    }
+    
+    func createDummyData() {
+        //This is how we connect with our core data container
+        let newDish = Dish(context: self.context)
+        newDish.name = "Dolma"
+        newDish.duration = 2.00
+        
+        do {
+            
+            try self.context.save()
+            
+        } catch {
+            
+        }
+        
+        self.fetchDish()
     }
 
 }
@@ -27,13 +69,35 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dishes.count
+        return self.items!.count
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Delete") {
+            (action, view, completionHandler) in
+            
+            let dishToRemove = self.items![indexPath.row]
+            
+            self.context.delete(dishToRemove)
+            
+            do {
+                try self.context.save()
+            } catch {
+                
+            }
+            
+            self.fetchDish()
+        }
+        
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = groceryTableView.dequeueReusableCell(withIdentifier: "dishesList") as! dishesListCellTableViewCell
-        cell.dishLbl.text = dishes[indexPath.row]
         
+        let dish = self.items![indexPath.row]
+        
+        cell.dishLbl.text = dish.name
         
         cell.dishView.layer.cornerRadius = 5
         cell.dishView.layer.shadowOpacity = 0.8

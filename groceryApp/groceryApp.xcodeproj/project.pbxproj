@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0421EB362777D41000E61776 /* dishesListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB352777D41000E61776 /* dishesListCellTableViewCell.swift */; };
 		0421EB382777E04900E61776 /* dishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421EB372777E04900E61776 /* dishDetailViewController.swift */; };
 		0428344E2778A81E0089E7C7 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428344D2778A81E0089E7C7 /* EditViewController.swift */; };
+		042EBB932779153F00140EB0 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBB912779153F00140EB0 /* Dish+CoreDataClass.swift */; };
+		042EBB942779153F00140EB0 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBB922779153F00140EB0 /* Dish+CoreDataProperties.swift */; };
+		04838DB3277CF63C00B976AD /* Dish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04838DB1277CF63C00B976AD /* Dish.xcdatamodeld */; };
 		04F3449527765B4800E6A460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449427765B4800E6A460 /* AppDelegate.swift */; };
 		04F3449727765B4800E6A460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449627765B4800E6A460 /* SceneDelegate.swift */; };
 		04F3449927765B4800E6A460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449827765B4800E6A460 /* ViewController.swift */; };
 		04F3449C27765B4800E6A460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F3449A27765B4800E6A460 /* Main.storyboard */; };
-		04F3449F27765B4800E6A460 /* groceryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F3449D27765B4800E6A460 /* groceryApp.xcdatamodeld */; };
 		04F344A127765B4B00E6A460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F344A027765B4B00E6A460 /* Assets.xcassets */; };
 		04F344A427765B4B00E6A460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F344A227765B4B00E6A460 /* LaunchScreen.storyboard */; };
 		04F344B327766F1500E6A460 /* SignPainter HouseScript Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F344B227766F1500E6A460 /* SignPainter HouseScript Regular.ttf */; };
@@ -24,12 +26,14 @@
 		0421EB352777D41000E61776 /* dishesListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dishesListCellTableViewCell.swift; sourceTree = "<group>"; };
 		0421EB372777E04900E61776 /* dishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dishDetailViewController.swift; sourceTree = "<group>"; };
 		0428344D2778A81E0089E7C7 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		042EBB912779153F00140EB0 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		042EBB922779153F00140EB0 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		04838DB2277CF63C00B976AD /* dish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dish.xcdatamodel; sourceTree = "<group>"; };
 		04F3449127765B4800E6A460 /* groceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F3449427765B4800E6A460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F3449627765B4800E6A460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04F3449827765B4800E6A460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04F3449B27765B4800E6A460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04F3449E27765B4800E6A460 /* groceryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = groceryApp.xcdatamodel; sourceTree = "<group>"; };
 		04F344A027765B4B00E6A460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F344A327765B4B00E6A460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F344A527765B4B00E6A460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042EBB95277915AD00140EB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042EBB912779153F00140EB0 /* Dish+CoreDataClass.swift */,
+				042EBB922779153F00140EB0 /* Dish+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04F3448827765B4800E6A460 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		04F3449327765B4800E6A460 /* groceryApp */ = {
 			isa = PBXGroup;
 			children = (
+				042EBB95277915AD00140EB0 /* Model */,
 				04F3449427765B4800E6A460 /* AppDelegate.swift */,
 				04F3449627765B4800E6A460 /* SceneDelegate.swift */,
 				04F3449827765B4800E6A460 /* ViewController.swift */,
@@ -76,8 +90,8 @@
 				04F344A027765B4B00E6A460 /* Assets.xcassets */,
 				04F344A227765B4B00E6A460 /* LaunchScreen.storyboard */,
 				04F344A527765B4B00E6A460 /* Info.plist */,
+				04838DB1277CF63C00B976AD /* Dish.xcdatamodeld */,
 				04F344AB2776622D00E6A460 /* fonts */,
-				04F3449D27765B4800E6A460 /* groceryApp.xcdatamodeld */,
 			);
 			path = groceryApp;
 			sourceTree = "<group>";
@@ -126,7 +140,7 @@
 				};
 			};
 			buildConfigurationList = 04F3448C27765B4800E6A460 /* Build configuration list for PBXProject "groceryApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -164,11 +178,13 @@
 			files = (
 				04F3449927765B4800E6A460 /* ViewController.swift in Sources */,
 				0421EB362777D41000E61776 /* dishesListCellTableViewCell.swift in Sources */,
+				04838DB3277CF63C00B976AD /* Dish.xcdatamodeld in Sources */,
 				04F3449527765B4800E6A460 /* AppDelegate.swift in Sources */,
 				04F3449727765B4800E6A460 /* SceneDelegate.swift in Sources */,
-				04F3449F27765B4800E6A460 /* groceryApp.xcdatamodeld in Sources */,
 				0421EB382777E04900E61776 /* dishDetailViewController.swift in Sources */,
 				0428344E2778A81E0089E7C7 /* EditViewController.swift in Sources */,
+				042EBB932779153F00140EB0 /* Dish+CoreDataClass.swift in Sources */,
+				042EBB942779153F00140EB0 /* Dish+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V3SPUU7FY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = groceryApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9V3SPUU7FY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = groceryApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,13 +386,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		04F3449D27765B4800E6A460 /* groceryApp.xcdatamodeld */ = {
+		04838DB1277CF63C00B976AD /* Dish.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				04F3449E27765B4800E6A460 /* groceryApp.xcdatamodel */,
+				04838DB2277CF63C00B976AD /* dish.xcdatamodel */,
 			);
-			currentVersion = 04F3449E27765B4800E6A460 /* groceryApp.xcdatamodel */;
-			path = groceryApp.xcdatamodeld;
+			currentVersion = 04838DB2277CF63C00B976AD /* dish.xcdatamodel */;
+			name = Dish.xcdatamodeld;
+			path = ../Dish.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

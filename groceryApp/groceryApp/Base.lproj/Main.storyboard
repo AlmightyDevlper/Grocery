@@ -175,7 +175,7 @@
                                 <rect key="frame" x="0.0" y="-65" width="414" height="916"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-Gd-fWJ">
-                                <rect key="frame" x="46" y="188" width="323" height="573"/>
+                                <rect key="frame" x="45.5" y="188" width="323" height="573"/>
                                 <color key="backgroundColor" red="0.97502392530000004" green="0.45424032209999998" blue="0.30614173410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="573" id="76j-7L-eDM"/>
@@ -203,6 +203,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JCc-vY-CeK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BDY-4c-AP1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HM-CK-aBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
