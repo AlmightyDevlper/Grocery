@@ -20,14 +20,28 @@ class ViewController: UIViewController {
     
     @IBOutlet var groceryTableView: UITableView!
     
+    var refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         groceryTableView.dataSource = self
         groceryTableView.delegate = self
         
+        //TODO: we need to assign it to a UITableViewController
+        // Check documentation  https://developer.apple.com/documentation/uikit/uirefreshcontrol
+         groceryTableView.refreshControl?.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        self.fetchDish()
+    }
+    
+    @objc func refreshTable() {
+        //Update table
+        groceryTableView.reloadData()
         
-        createDummyData()
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func fetchDish() {
@@ -44,23 +58,6 @@ class ViewController: UIViewController {
         } catch {
             // throw mess
         }
-    }
-    
-    func createDummyData() {
-        //This is how we connect with our core data container
-        let newDish = Dish(context: self.context)
-        newDish.name = "Dolma"
-        newDish.duration = 2.00
-        
-        do {
-            
-            try self.context.save()
-            
-        } catch {
-            
-        }
-        
-        self.fetchDish()
     }
 
 }
@@ -98,7 +95,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let dish = self.items![indexPath.row]
         
         cell.dishLbl.text = dish.name
-        
+    
         cell.dishView.layer.cornerRadius = 5
         cell.dishView.layer.shadowOpacity = 0.8
         cell.dishView.layer.shadowRadius = 3

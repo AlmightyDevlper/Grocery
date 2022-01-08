@@ -10,10 +10,34 @@ import UIKit
 
 class EditViewController: UIViewController {
 
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var items:[Dish]?
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func addDish(_ sender: Any) {
+        //This is how we connect with our core data container
+        let newDish = Dish(context: self.context)
+        newDish.name = "DolmaFromEdit/Add"
+        newDish.duration = 2.00
+        
+         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        do {
+            
+            try self.context.save()
+            self.present(vc, animated: true, completion: nil)
+        } catch {
+            print("Not saved")
+        }
+        
     }
     
 
