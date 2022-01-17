@@ -28,20 +28,21 @@ class ViewController: UIViewController {
         groceryTableView.dataSource = self
         groceryTableView.delegate = self
         
-        //TODO: we need to assign it to a UITableViewController
-        // Check documentation  https://developer.apple.com/documentation/uikit/uirefreshcontrol
-         groceryTableView.refreshControl?.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
         self.fetchDish()
+        //TODO: we need to assign it to a UITableViewController
+        // Check documentation
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(self.refreshTable), for: .valueChanged)
+        self.groceryTableView.refreshControl = refreshControl
     }
     
     @objc func refreshTable() {
         //Update table
-        groceryTableView.reloadData()
-        
-        // Dismiss the refresh control.
-        DispatchQueue.main.async {
-            self.refreshControl.endRefreshing()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.fetchDish()
+            self.groceryTableView.refreshControl?.endRefreshing()
         }
+        
     }
     
     func fetchDish() {

@@ -6,6 +6,8 @@ class dishesListCellTableViewCell: UITableViewCell {
     @IBOutlet var dishView: UIView!
     @IBOutlet var dishImgView: UIImageView!
     @IBOutlet var dishLbl: UILabel!
+    @IBOutlet weak var dishDurationLbl: UILabel!
+    @IBOutlet weak var dishLevelLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

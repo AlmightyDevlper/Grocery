@@ -40,29 +40,53 @@
                                                                 <constraint firstAttribute="height" constant="121" id="pgy-Nc-Vrp"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs9-aS-jar">
-                                                            <rect key="frame" x="127" y="16" width="188" height="19"/>
-                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN1-dg-Smr">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN1-dg-Smr">
                                                             <rect key="frame" x="8" y="11" width="307" height="134"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <connections>
                                                                 <segue destination="a7i-jd-7gC" kind="showDetail" id="oOc-FW-P4T"/>
                                                             </connections>
                                                         </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs9-aS-jar">
+                                                            <rect key="frame" x="127" y="16" width="188" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-Zx-RSP">
+                                                            <rect key="frame" x="127" y="49" width="36" height="18"/>
+                                                            <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-Ps-pvg">
+                                                            <rect key="frame" x="127" y="87" width="36" height="18"/>
+                                                            <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.96078431372549022" green="0.36470588235294116" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="trailing" secondItem="Byt-Zx-RSP" secondAttribute="trailing" id="3pd-6d-0qj"/>
+                                                        <constraint firstItem="qN1-dg-Smr" firstAttribute="leading" secondItem="rTt-HD-rvb" secondAttribute="leading" id="4qH-e1-785"/>
                                                         <constraint firstItem="rTt-HD-rvb" firstAttribute="top" secondItem="jfZ-8G-2Fe" secondAttribute="top" constant="16" id="FF5-IR-Syb"/>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="height" secondItem="Byt-Zx-RSP" secondAttribute="height" id="Fcx-mw-Ntj"/>
                                                         <constraint firstAttribute="bottom" secondItem="rTt-HD-rvb" secondAttribute="bottom" constant="16" id="HdT-2P-0NP"/>
                                                         <constraint firstItem="Gs9-aS-jar" firstAttribute="leading" secondItem="rTt-HD-rvb" secondAttribute="trailing" constant="8" id="Pbb-XR-mzT"/>
+                                                        <constraint firstItem="Byt-Zx-RSP" firstAttribute="top" secondItem="Gs9-aS-jar" secondAttribute="bottom" constant="12.5" id="PjR-cr-F5w"/>
+                                                        <constraint firstItem="Byt-Zx-RSP" firstAttribute="leading" secondItem="Gs9-aS-jar" secondAttribute="leading" id="TpX-nx-RIh"/>
+                                                        <constraint firstItem="qN1-dg-Smr" firstAttribute="bottom" secondItem="jfZ-8G-2Fe" secondAttribute="bottomMargin" id="WcI-BO-rMl"/>
                                                         <constraint firstAttribute="trailing" secondItem="rTt-HD-rvb" secondAttribute="trailing" constant="204" id="We2-ij-ID3"/>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="width" secondItem="qN1-dg-Smr" secondAttribute="height" multiplier="18:67" id="Ygd-vc-o23"/>
                                                         <constraint firstItem="Gs9-aS-jar" firstAttribute="trailing" secondItem="jfZ-8G-2Fe" secondAttribute="trailingMargin" id="ZQF-YW-ofr"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Byt-Zx-RSP" secondAttribute="trailing" constant="20" symbolic="YES" id="dOr-Bf-pWK"/>
+                                                        <constraint firstItem="Byt-Zx-RSP" firstAttribute="width" secondItem="Gs9-aS-jar" secondAttribute="height" multiplier="7:4" id="e5u-Jg-k3x"/>
                                                         <constraint firstItem="rTt-HD-rvb" firstAttribute="leading" secondItem="jfZ-8G-2Fe" secondAttribute="leading" constant="8" id="gyp-1O-znN"/>
+                                                        <constraint firstItem="qN1-dg-Smr" firstAttribute="top" secondItem="jfZ-8G-2Fe" secondAttribute="top" constant="11" id="j9t-s8-Dgr"/>
                                                         <constraint firstItem="Gs9-aS-jar" firstAttribute="top" secondItem="rTt-HD-rvb" secondAttribute="top" id="jSg-if-hcj"/>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="top" secondItem="Byt-Zx-RSP" secondAttribute="bottom" constant="20" id="lBg-qu-ksy"/>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="leading" secondItem="Byt-Zx-RSP" secondAttribute="leading" id="oEh-CN-aMK"/>
+                                                        <constraint firstItem="qN1-dg-Smr" firstAttribute="trailing" secondItem="Gs9-aS-jar" secondAttribute="trailing" id="sGx-AI-Nkw"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -76,16 +100,18 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="dishDurationLbl" destination="Byt-Zx-RSP" id="icq-jK-HQT"/>
                                             <outlet property="dishImgView" destination="rTt-HD-rvb" id="QYE-fv-PB9"/>
                                             <outlet property="dishLbl" destination="Gs9-aS-jar" id="qzX-Ob-vIX"/>
+                                            <outlet property="dishLevelLbl" destination="3dA-Ps-pvg" id="O6u-Sd-1W1"/>
                                             <outlet property="dishView" destination="jfZ-8G-2Fe" id="kg5-8V-AcO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqa-qB-9XY">
-                                <rect key="frame" x="168" y="802" width="78" height="30"/>
-                                <state key="normal" title="Plus button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqa-qB-9XY">
+                                <rect key="frame" x="157" y="782" width="100" height="80"/>
+                                <state key="normal" image="addButton2"/>
                                 <connections>
                                     <segue destination="mVI-Fd-oQk" kind="show" id="rl2-Ds-uyF"/>
                                 </connections>
@@ -98,7 +124,7 @@
                             <constraint firstItem="iqa-qB-9XY" firstAttribute="centerX" secondItem="d4e-gb-fEm" secondAttribute="centerX" id="IOh-mO-UBA"/>
                             <constraint firstItem="NYi-2j-YcU" firstAttribute="top" secondItem="wCD-tm-ko4" secondAttribute="topMargin" constant="-103" id="Uiu-Ug-S2s"/>
                             <constraint firstItem="d4e-gb-fEm" firstAttribute="leading" secondItem="WDQ-W1-HXK" secondAttribute="leading" id="WBZ-Tp-cWu"/>
-                            <constraint firstItem="iqa-qB-9XY" firstAttribute="top" secondItem="d4e-gb-fEm" secondAttribute="bottom" constant="46" id="as8-O8-r2o"/>
+                            <constraint firstItem="iqa-qB-9XY" firstAttribute="top" secondItem="d4e-gb-fEm" secondAttribute="bottom" constant="26" id="as8-O8-r2o"/>
                             <constraint firstItem="NYi-2j-YcU" firstAttribute="leading" secondItem="d4e-gb-fEm" secondAttribute="leading" id="cnx-qa-52K"/>
                             <constraint firstItem="iqa-qB-9XY" firstAttribute="centerX" secondItem="NYi-2j-YcU" secondAttribute="centerX" id="f6v-61-s7j"/>
                             <constraint firstItem="NYi-2j-YcU" firstAttribute="centerY" secondItem="wCD-tm-ko4" secondAttribute="centerY" constant="-29.5" id="raC-co-5ea"/>
@@ -221,6 +247,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addButton2" width="100" height="80"/>
         <image name="appbgk-3" width="1125" height="2436"/>
         <image name="plus" catalog="system" width="64" height="56"/>
         <image name="shopping-cart" width="651" height="651"/>
