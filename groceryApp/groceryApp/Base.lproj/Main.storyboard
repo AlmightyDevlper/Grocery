@@ -53,13 +53,13 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-Zx-RSP">
-                                                            <rect key="frame" x="127" y="49" width="36" height="18"/>
+                                                            <rect key="frame" x="127" y="49" width="188" height="18"/>
                                                             <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-Ps-pvg">
-                                                            <rect key="frame" x="127" y="87" width="36" height="18"/>
+                                                            <rect key="frame" x="127" y="87" width="188" height="18"/>
                                                             <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -77,10 +77,10 @@
                                                         <constraint firstItem="Byt-Zx-RSP" firstAttribute="leading" secondItem="Gs9-aS-jar" secondAttribute="leading" id="TpX-nx-RIh"/>
                                                         <constraint firstItem="qN1-dg-Smr" firstAttribute="bottom" secondItem="jfZ-8G-2Fe" secondAttribute="bottomMargin" id="WcI-BO-rMl"/>
                                                         <constraint firstAttribute="trailing" secondItem="rTt-HD-rvb" secondAttribute="trailing" constant="204" id="We2-ij-ID3"/>
-                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="width" secondItem="qN1-dg-Smr" secondAttribute="height" multiplier="18:67" id="Ygd-vc-o23"/>
+                                                        <constraint firstItem="3dA-Ps-pvg" firstAttribute="width" secondItem="qN1-dg-Smr" secondAttribute="height" multiplier="18:67" constant="152" id="Ygd-vc-o23"/>
                                                         <constraint firstItem="Gs9-aS-jar" firstAttribute="trailing" secondItem="jfZ-8G-2Fe" secondAttribute="trailingMargin" id="ZQF-YW-ofr"/>
-                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Byt-Zx-RSP" secondAttribute="trailing" constant="20" symbolic="YES" id="dOr-Bf-pWK"/>
-                                                        <constraint firstItem="Byt-Zx-RSP" firstAttribute="width" secondItem="Gs9-aS-jar" secondAttribute="height" multiplier="7:4" id="e5u-Jg-k3x"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Byt-Zx-RSP" secondAttribute="trailing" constant="8" id="dOr-Bf-pWK"/>
+                                                        <constraint firstItem="Byt-Zx-RSP" firstAttribute="width" secondItem="Gs9-aS-jar" secondAttribute="height" multiplier="7:4" constant="152.125" id="e5u-Jg-k3x"/>
                                                         <constraint firstItem="rTt-HD-rvb" firstAttribute="leading" secondItem="jfZ-8G-2Fe" secondAttribute="leading" constant="8" id="gyp-1O-znN"/>
                                                         <constraint firstItem="qN1-dg-Smr" firstAttribute="top" secondItem="jfZ-8G-2Fe" secondAttribute="top" constant="11" id="j9t-s8-Dgr"/>
                                                         <constraint firstItem="Gs9-aS-jar" firstAttribute="top" secondItem="rTt-HD-rvb" secondAttribute="top" id="jSg-if-hcj"/>

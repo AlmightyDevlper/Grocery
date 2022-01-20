@@ -23,7 +23,7 @@ class EditViewController: UIViewController {
     @IBAction func addDish(_ sender: Any) {
         //This is how we connect with our core data container
         let newDish = Dish(context: self.context)
-        newDish.name = "DolmaFromEdit/Add"
+        newDish.name = "Dolma"
         newDish.duration = 2.00
         
          let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
