@@ -10,12 +10,21 @@ import UIKit
 
 class EditViewController: UIViewController {
 
+    @IBOutlet weak var editView: UIView!
+    @IBOutlet weak var dishTitle: UITextField!
+    @IBOutlet weak var dishDuration: UITextField!
+    @IBOutlet weak var dishDescription: UITextView!
+    @IBOutlet weak var dishHardness: UITextField!
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var items:[Dish]?
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        editView.layer.cornerRadius = 5
+        
 
     }
     
@@ -23,8 +32,15 @@ class EditViewController: UIViewController {
     @IBAction func addDish(_ sender: Any) {
         //This is how we connect with our core data container
         let newDish = Dish(context: self.context)
-        newDish.name = "Dolma"
-        newDish.duration = 2.00
+//        var disTime =
+        newDish.name = dishTitle.text
+        newDish.ingredients = dishDescription.text
+//        if (dishDuration.text == nil) {
+//            disTime = 0
+//        } else {
+//            disTime =
+//        }
+        newDish.duration = Double(dishDuration.text!)!
         
          let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
@@ -39,16 +55,6 @@ class EditViewController: UIViewController {
         }
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
