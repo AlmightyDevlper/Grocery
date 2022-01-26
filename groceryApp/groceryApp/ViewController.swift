@@ -96,8 +96,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let dish = self.items![indexPath.row]
         
         cell.dishLbl.text = dish.name
-        cell.dishDurationLbl.text = "\(dish.duration) h"
-        cell.dishLevelLbl.text = "Hardnes: easy"
+        cell.dishDurationLbl.text = "Duration: \(dish.duration!)"
+        cell.dishLevelLbl.text = "Hardness: \(dish.duration!)"
+//        cell.dishImgView.image = dish.picture?
     
         cell.dishView.layer.cornerRadius = 5
         cell.dishView.layer.shadowOpacity = 0.8
