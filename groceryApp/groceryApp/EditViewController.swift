@@ -44,7 +44,6 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let userPickedImage = info[.editedImage] as? UIImage else { return }
         fetchImage.image = userPickedImage
-        tempImgData = fetchImage.image?.jpegData(compressionQuality: 5)
 
         picker.dismiss(animated: true, completion: nil)
     }
@@ -54,7 +53,7 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
         let newDish = Dish(context: self.context)
         
     
-        newDish.picture = tempImgData
+        newDish.image = (fetchImage?.image)!.pngData()
         newDish.name = dishTitle.text
         newDish.ingredients = dishDescription.text
         newDish.duration = dishDuration.text

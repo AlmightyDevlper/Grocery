@@ -18,7 +18,7 @@ extension Dish {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var picture: Data?
+    @NSManaged public var image: Data?
     @NSManaged public var duration: String?
     @NSManaged public var hardness: String?
     @NSManaged public var ingredients: String?

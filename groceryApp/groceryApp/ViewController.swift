@@ -94,11 +94,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = groceryTableView.dequeueReusableCell(withIdentifier: "dishesList") as! dishesListCellTableViewCell
         
         let dish = self.items![indexPath.row]
+        let dishImage = UIImage(data: dish.image!)
         
         cell.dishLbl.text = dish.name
         cell.dishDurationLbl.text = "Duration: \(dish.duration!)"
-        cell.dishLevelLbl.text = "Hardness: \(dish.duration!)"
-//        cell.dishImgView.image = dish.picture?
+        cell.dishLevelLbl.text = "Hardness: \(dish.hardness!)"
+        cell.dishImgView.image = dishImage
     
         cell.dishView.layer.cornerRadius = 5
         cell.dishView.layer.shadowOpacity = 0.8
