@@ -107,8 +107,21 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.dishView.layer.shadowOffset = CGSize(width: 0 , height:3)
         cell.dishView.layer.shouldRasterize = true
         
+        //Image of dish
+        cell.dishImgView.layer.cornerRadius = 5
+        
         return cell
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let dish = self.items![indexPath.row]
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "dishDetailView", bundle: nil)
+        
+        let dishDetailViewC: UIViewController = storyboard.instantiateViewController(withIdentifier: "dishDetailView") as! ViewController
+       
+        self.present(dishDetailViewC, animated: true)
     }
 }
 

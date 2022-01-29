@@ -52,6 +52,9 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
         //This is how we connect with our core data container
         let newDish = Dish(context: self.context)
         
+        let ac = UIAlertController(title: "Added", message: "dish has been added!", preferredStyle: .alert)
+        
+        ac.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
     
         newDish.image = (fetchImage?.image)!.pngData()
         newDish.name = dishTitle.text
@@ -59,14 +62,9 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
         newDish.duration = dishDuration.text
         newDish.hardness = dishHardness.text
         
-         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-
-        let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        
         do {
-            
             try self.context.save()
-            self.present(vc, animated: true, completion: nil)
+            self.present(ac, animated: true)
         } catch {
             print("Not saved")
         }
