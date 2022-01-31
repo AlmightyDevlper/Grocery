@@ -117,9 +117,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let dish = self.items![indexPath.row]
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "dishDetailView", bundle: nil)
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let dishDetailViewC: UIViewController = storyboard.instantiateViewController(withIdentifier: "dishDetailView") as! ViewController
+        let dishDetailViewC: UIViewController = storyboard.instantiateViewController(withIdentifier: "dishDetailView") as! dishDetailViewController
        
         self.present(dishDetailViewC, animated: true)
     }
