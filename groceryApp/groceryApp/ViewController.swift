@@ -115,11 +115,17 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let dish = self.items![indexPath.row]
+        let dish = self.items![indexPath.row]
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let dishDetailViewC: UIViewController = storyboard.instantiateViewController(withIdentifier: "dishDetailView") as! dishDetailViewController
+        let dishDetailViewC = storyboard.instantiateViewController(withIdentifier: "dishDetailView") as! dishDetailViewController
+        
+        dishDetailViewC.dishName = dish.name!
+        dishDetailViewC.timing = dish.duration!
+        dishDetailViewC.hardness = dish.hardness!
+        dishDetailViewC.desc = dish.ingredients!
+        dishDetailViewC.image = dish.image
        
         self.present(dishDetailViewC, animated: true)
     }
