@@ -26,6 +26,7 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         editView.layer.cornerRadius = 5
         fetchImage.layer.cornerRadius = 5
@@ -46,6 +47,10 @@ class EditViewController: UIViewController,UINavigationControllerDelegate, UIIma
         fetchImage.image = userPickedImage
 
         picker.dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func addDish(_ sender: Any) {
